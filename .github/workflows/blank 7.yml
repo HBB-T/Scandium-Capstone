@@ -35,7 +35,7 @@ jobs:
             echo "Test ran successfully. Status: $status"
           else
             echo "Test ran with failure. Status: $status"
-    
+            exit 1
           fi
         env:
           CURL_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt # Set the CA certificates bundle path
